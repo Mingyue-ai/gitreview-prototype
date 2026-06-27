@@ -1,0 +1,25 @@
+{
+  "name": "GitReview",
+  "url": "https://github.com/apps/gitreview",
+  "callback_url": "https://gitreview-prototype.vercel.app/auth/callback",
+  "redirect_url": "https://gitreview-prototype.vercel.app/auth/callback",
+  "hook_attributes": {
+    "url": "https://gitreview-prototype.vercel.app/webhooks",
+    "active": true
+  },
+  "setup_url": "https://gitreview-prototype.vercel.app/setup",
+  "setup_on_update": true,
+  "public": true,
+  "default_events": [
+    "pull_request"
+  ],
+  "default_permissions": {
+    "pull_requests": "read",
+    "issues": "write",
+    "contents": "read",
+    "metadata": "read"
+  },
+  "description": "AI-powered PR Assistant that generates clear, structured PR descriptions from diffs.",
+  "short_description": "AI PR descriptions from diffs",
+  "background_color": "#ffffff"
+}
